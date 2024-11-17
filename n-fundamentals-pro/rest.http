@@ -1,0 +1,25 @@
+###
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/songs/1
+
+
+### FIND ALL SONGS
+GET http://localhost:3000/songs/
+
+
+
+###
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+    "title":"Đưa em về nhà",
+    "artists" : [
+        "GDucky",
+        "MCK"
+    ],
+     "duration": "16:56",
+     "releasedDate": "2024-10-22T16:56:27"
+}
